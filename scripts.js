@@ -1,12 +1,18 @@
-let num =-5;
 
-if(num>0){
-    console.log(`${num} es mayor que 0`);
-    console.log(`${num} es mayor que 0`);
+const numbers = document.getElementById('numbers');
+const result = document.getElementById('result');
+
+let a = prompt('Introduzca el primer número');
+let b = prompt('Introduzca el segundo número');
+let c = prompt('Introduzca el tercer número');
+
+numbers.textContent = `Los números introducidos son ${a}, ${b}, ${c}`
+
+if(a>=b && a>=c){
+    if(b>c){
+        result.textContent = `El orden es: ${a}, ${b}, ${c}`
+    }
 
 }
 
-else{
-    console.log(`${num} es menor que 0`);
 
-}
